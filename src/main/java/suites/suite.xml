@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My Test suite">
+
+    <parameter name="browser" value="chrome"></parameter>
+    <!--<parameter name="browser" value="firefox"></parameter>-->
+
+    <test name="Basic Google Search Test">
+
+        <parameter name="search" value="Automation with selenium"></parameter>
+
+        <classes>
+            <class name="tests.SearchTest"></class>
+        </classes>
+    </test>
+</suite>
